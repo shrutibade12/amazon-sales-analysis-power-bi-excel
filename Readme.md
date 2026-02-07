@@ -59,7 +59,7 @@ This project addresses these gaps by building a centralized analytical dashboard
 ---
 <h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
 ```
-amazon_sales_analysis/
+amazon-sales-analysis-power-bi-excel/
 │
 ├── README.md
 ├── .gitignore
@@ -67,6 +67,7 @@ amazon_sales_analysis/
 │
 ├── dashboard/                  # Power BI dashboard file
 │   └── amazon_dashboard.pbix
+
 ```
 
 ---
@@ -85,9 +86,9 @@ This step ensured analytical reliability and performance optimization.
 - **Data Modeling (Star Schema Approach)**
 A star schema model was implemented to enhance scalability and performance.
 
-**Model Structure**
-Fact Table: Sales (transaction-level data)
-Dimension Tables: Date (Calendar), Product (Category, Description)
+ **Model Structure**
+  - Fact Table: Sales (transaction-level data)
+  - Dimension Tables: Date (Calendar), Product (Category, Description)
 
 **Key Modeling Practices**
 - One-to-many relationships from dimensions to fact table
