@@ -58,16 +58,27 @@ This project addresses these gaps by building a centralized analytical dashboard
 
 ---
 <h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
+
 ```
-amazon_sales_analysis/
+amazon-sales-analysis-power-bi-excel/
 │
-├── README.md
-├── .gitignore
-├── Amazon_Sales_Analysis_Report.pdf
+├── README.md                              # Project documentation
+├── .gitignore                             # Git ignore file
+├── Amazon_Sales_Analysis_Report.pdf       # Final analysis report
 │
-├── Dashboard/                  # Power BI dashboard file
-│   └── amazon_dashboard.pbix
+├── data/                                  # Raw data folder
+│   └── amazon_sales_data.csv             # Sales transaction data
+│
+├── dashboard/                             # Power BI files
+│   └── amazon_dashboard.pbix             # Interactive Power BI dashboard
+│
+├── Images/                                # Dashboard screenshots
+│   └── dashboard.png                     # Dashboard visualization
+│
+└── Documentation/                         # Additional documentation
+    └── DAX_Measures.md                   # Detailed DAX formulas
 ```
+
 
 ---
 <h2><a class="anchor" id="data-cleaning--preparation"></a>Data Cleaning & Preparation</h2>
