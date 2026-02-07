@@ -47,7 +47,6 @@ This project addresses these gaps by building a centralized analytical dashboard
 
 - CSV file located in `/data/` folder (amazon_sales_analysis)
 
-
 ---
 
 <h2><a class="anchor" id="tools--technologies"></a>Tools & Technologies</h2>
@@ -59,12 +58,12 @@ This project addresses these gaps by building a centralized analytical dashboard
 
 ---
 <h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
-
+```
 amazon_sales_analysis/
 │
 ├── README.md
 ├── .gitignore
-├── Amazon_Sales_Analysis_Report.pdf
+├── Amazon_Sales_Analysis_Report.pdf   # Final analysis report
 │
 ├── dashboard/                  # Power BI dashboard file
 │   └── amazon_dashboard.pbix
@@ -101,15 +100,15 @@ This modeling approach ensures accurate time-based calculations and efficient re
 ---
 <h2><a class="anchor" id="research-questions--key-findings"></a>Research Questions & Key Findings</h2>
 
-1. Revenue Trends
+**1. Revenue Trends**
  - Noticeable sales acceleration toward later months indicates seasonal demand impact.
  - Weekly spikes suggest promotional campaigns or peak demand periods.
 
-2. Product Performance
+**2. Product Performance**
  - Revenue concentration exists within specific product categories.
  - Top-selling products differ from most-reviewed products, indicating demand vs engagement variation.
 
-3. Engagement Analysis
+**3. Engagement Analysis**
  - High review counts do not always translate to proportional revenue contribution.
  - Engagement metrics provide complementary insights to revenue metrics.
 
@@ -117,24 +116,23 @@ This modeling approach ensures accurate time-based calculations and efficient re
 ---
 <h2><a class="anchor" id="dashboard"></a>Dashboard</h2>
 
-- Power BI Dashboard shows:
-- KPI Layer (Top Section)
+- Power BI Dashboard:
+**KPI Layer (Top Section)**
  - YTD Sales ($2.18M)
  - QTD Sales ($811.09K)
  - YTD Products Sold (27.75K)
  - YTD Reviews (19.42M)
 
-- Trend Analysis Layer
+**Trend Analysis Layer**
  - Sales by Month (seasonality detection)
  - Sales by Week (short-term fluctuation analysis)
 
--Performance Analysis Layer
+**Performance Analysis Layer**
  - Sales by Product Category (YTD vs QTD comparison)
  - Top 5 Products by YTD Sales
  - Top 5 Products by YTD Reviews
 
 ![Amazon Sales Analysis Dashboard](Images/dashboard.png)
-
 
 ---
 
@@ -149,6 +147,7 @@ The following DAX measures were created to calculate KPIs and enable time-based 
 ```bash
 YTD Sales = TOTALYTD(SUM(Sales[Sales Amount]), 'Calendar'[Date])
 ``` 
+
 2. Calculates cumulative sales from the beginning of the quarter.
 ```bash
 QTD Sales = TOTALQTD(SUM(Sales[Sales Amount]), 'Calendar'[Date])
@@ -188,4 +187,4 @@ YTD Reviews = TOTALYTD(SUM(Sales[Reviews]), 'Calendar'[Date])
 **Shruti Bade**  
 Data Analyst  
 📧 Email: shrutibade12@gmail.com 
-🔗 [LinkedIn](https://www.linkedin.com/in/shruit-bade)  
+🔗 [LinkedIn](https://www.linkedin.com/in/shruti-bade)  
