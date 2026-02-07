@@ -59,7 +59,7 @@ This project addresses these gaps by building a centralized analytical dashboard
 ---
 <h2><a class="anchor" id="project-structure"></a>Project Structure</h2>
 ```
-amazon-sales-analysis-power-bi-excel/
+amazon-sales-analysis/
 │
 ├── README.md
 ├── .gitignore
@@ -67,7 +67,6 @@ amazon-sales-analysis-power-bi-excel/
 │
 ├── dashboard/                  # Power BI dashboard file
 │   └── amazon_dashboard.pbix
-
 ```
 
 ---
